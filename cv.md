@@ -2,7 +2,7 @@
 
 ## Contacts:
 
-**Telegram:** https://t.me/sanya2020327
+**Telegram:** <https://t.me/sanya2020327>
 
 **E-mail:** afanasienka@yandex.by
 
@@ -50,15 +50,15 @@ Write a function that will find all the anagrams of a word from a list. You will
 
 TextCounter - simple application that generates dummy text for any app
 
-https://sasaafanasienka.github.io/Textcounter/
+<https://sasaafanasienka.github.io/Textcounter/>
 
 My own reusable and customizable react-component for creating any carousel block in any app
 
-https://sasaafanasienka.github.io/Carousel/
+<https://sasaafanasienka.github.io/Carousel/>
 
 Tetris
 
-https://sasaafanasienka.github.io/Tetris/
+<https://sasaafanasienka.github.io/Tetris/>
 
 ## English
 
