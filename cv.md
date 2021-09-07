@@ -2,11 +2,11 @@
 
 ## Contacts:
 
-**Telegram:** <https://t.me/sanya2020327>
+* **Telegram:** <https://t.me/sanya2020327>
 
-**E-mail:** afanasienka@yandex.by
+* **E-mail:** afanasienka@yandex.by
 
-**Phone:** +375 29 269-87-36
+* **Phone:** +375 29 269-87-36
 
 ## About me:
 
