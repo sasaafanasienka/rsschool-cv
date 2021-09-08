@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+section {
+    margin: 0 0 30px 0;
+}
+
+.title {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    line-height: 100%;
+}
+.text {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.text a {
+    color: inherit;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
+.cv {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 
+        "main aside"
+        "footer footer"; 
+    gap: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+}
+
+.info__image {
+    margin: 0 30px 0 0;
+    border-radius: 1000px;
+}
+
+.info__name {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+}
+
+.info__about {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.projects {
+    grid-area: aside;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.projects .title {
+    color: white;
+    margin: 0 0 20px 0
+}
+
+.projects .text {
+    color: white
+}
+
+.projects__item {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.projects__item:hover {
+    background-color: #ffe2e2;
+}
+
+.projects__title {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.projects__description {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.projects__tehnologies-container {
+    display: flex;
+}
+
+.projects__tehnologies-item {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #ff0000;
+    border-radius: 3px;
+}
+
+.projects__preview {
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.footer__copyright a {
+    color: #000000;
+    text-decoration: none;
+}
