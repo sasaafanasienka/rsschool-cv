@@ -17,6 +17,14 @@ section {
     line-height: 120%;
 }
 
+.text a {
+    color: inherit;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
 .cv {
     position: relative;
     display: grid;
