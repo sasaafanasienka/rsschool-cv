@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;600&display=swap" rel="stylesheet">
+    <title>Alaksandr Afanasienka CV</title>
 </head>
 <body>
-    
+    <main class="cv">
+        <div>
+            <section class="info">
+                <img class="info__image" width="150px" height="150px" src="./images/avatar.jpg">
+                <div class="info__container">
+                    <h1 class="info__name">Alaksandr Afanasienka</h1>
+                    <h3 class="info__about">Junior frontend-developer</h3>
+                </div>
+            </section>
+            <section class="about">
+                <h2 class="title">About me</h2>
+                <p class="text">I want to start my career in frontend-development and I have already taken several 
+                steps to achieve this goal: graduate Yandex.Praktikum frontend-developer course aln self-learned 
+                some technologies and frameworks as react and redux</p>
+            </section>
+            <section class="skills">
+                <h2 class="title">Skills</h2>
+                <p class="text">HTML, CSS (SASS), JS, React, Redux, MobX, BEM, Git</p>
+            </section>
+            <section class="education">
+                <h2 class="title">Education</h2>
+                <p class="text">2019-2020. Yandex.Praktikum, Front-End developer training course</p>
+            </section>
+            <section class="experience">
+                <h2 class="title">Experience</h2>
+                <p class="text">2021 (4 months): Junior react-developer in Oxios Soft (UA)</p>
+            </section>
+            <section class="languages">
+                <h2 class="title">Languages</h2>
+                <p class="text">Russian (native), English (A2)</p>
+            </section>
+        </div>
+        <aside class="projects">
+            <h2 class="title">My projects</h2>
+            <a href="https://github.com/sasaafanasienka/Textcounter">
+                <button class="projects__item" >
+                    <img class="projects__preview" width="70px" height="70px" src="./images/TextCounter.svg">
+                    <h5 class="projects__title">TextCounter</h5>
+                    <p class="projects__description">TextCounter - simple application that generates dummy text for any app</p>
+                    <div class="projects__tehnologies-container">
+                        <div class="projects__tehnologies-item">React</div>
+                        <div class="projects__tehnologies-item">Redux</div>
+                        <div class="projects__tehnologies-item">SCSS</div>
+                    </div>
+                </button>
+            </a>
+            <a href="https://github.com/sasaafanasienka/Tetris">
+                <button class="projects__item" >
+                    <img class="projects__preview" width="70px" height="70px" src="./images/Tetris.svg">
+                    <h5 class="projects__title">Tetris</h5>
+                    <p class="projects__description">My version of the popular game</p>
+                    <div class="projects__tehnologies-container">
+                        <div class="projects__tehnologies-item">React</div>
+                        <div class="projects__tehnologies-item">Redux</div>
+                        <div class="projects__tehnologies-item">SCSS</div>
+                    </div>
+                </button>
+            </a>
+            <a href="https://github.com/sasaafanasienka/Carousel">
+                <button class="projects__item" >
+                    <img class="projects__preview" width="70px" height="70px" src="./images/Carousel.svg">
+                    <h5 class="projects__title">Carousel</h5>
+                    <p class="projects__description">My own reusable and customizable react-component for creating any carousel block in any app</p>
+                    <div class="projects__tehnologies-container">
+                        <div class="projects__tehnologies-item">React</div>
+                        <div class="projects__tehnologies-item">CSS</div>
+                    </div>
+                </button>
+            </a>
+        </aside>
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2021, <a href='https://github.com/sasaafanasienka'>Alaksandr Afanasienka</a></p>
+            <a href="https://rs.school/js/">
+                <img src="./images/rs_school_js.svg" width="100px">
+            </a>
+        </footer>
+    </main>
 </body>
 </html>
