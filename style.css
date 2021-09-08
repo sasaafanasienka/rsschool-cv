@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
+
 section {
     margin: 0 0 30px 0;
 }
@@ -28,12 +29,12 @@ section {
 .cv {
     position: relative;
     display: grid;
+    grid-template-columns: 1fr 300px;
     grid-template-areas: 
         "main aside"
         "footer footer"; 
-    width: 1000px;
-    grid-template-columns: 1fr 300px;
     gap: 30px;
+    width: 1000px;
     margin: 0 auto;
     padding: 25px 0;
     box-sizing: border-box;
@@ -64,9 +65,9 @@ section {
 
 .projects {
     grid-area: aside;
+    padding: 25px;
     border-radius: 10px;
     background-color: #000000;
-    padding: 25px;
     box-sizing: border-box;
 }
 
@@ -88,9 +89,10 @@ section {
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: 0.3s ease;
+    cursor: pointer;
 }
+
 .projects__item:hover {
     background-color: #ffe2e2;
 }
@@ -126,8 +128,8 @@ section {
 }
 
 .projects__preview {
-    border-radius: 5px;
     margin: 0 0 10px 0;
+    border-radius: 5px;
 }
 
 .footer {
@@ -142,6 +144,7 @@ section {
     line-height: 100%;
     font-weight: 600;
 }
+
 .footer__copyright a {
     color: #000000;
     text-decoration: none;
