@@ -8,9 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/a11y-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <title>Alaksandr Afanasienka CV</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-menu">
+                <li class="header__menu-item"><a href="#contacts">Contacts</a></li>   
+                <li class="header__menu-item"><a href="#about">About me</a></li>
+                <li class="header__menu-item"><a href="#skills">Skills</a></li>
+                <li class="header__menu-item"><a href="#education">Education</a></li>
+                <li class="header__menu-item"><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <nav class="header__burger-nav header__burger-nav_disabled">
+            <button class="header__burger-close">
+                <img src="./images/close.svg" alt="button icon">
+            </button>
+            <ul class="header__burger-nav-menu">
+                <li class="header__burger-nav-menu-item"><a href="#contacts">Contacts</a></li>   
+                <li class="header__burger-nav-menu-item"><a href="#about">About me</a></li>
+                <li class="header__burger-nav-menu-item"><a href="#skills">Skills</a></li>
+                <li class="header__burger-nav-menu-item"><a href="#education">Education</a></li>
+                <li class="header__burger-nav-menu-item"><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <button class="header__burger-button">
+            <img src="./images/burger.svg" alt="button icon">
+        </button>
+    </header>
     <main class="cv">
         <div>
             <section class="info">
@@ -20,27 +53,38 @@
                     <h3 class="info__about">Junior frontend-developer</h3>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="title">Contacts</h2>
-                <p class="text"><span class="text_bold">E-mail: </span><a href="mailto:afanasienka@yandex.by">afanasienka@yandex.by</a></p>
-                <p class="text"><span class="text_bold">Telegram: </span><a href="https://t.me/sanya2020327">https://t.me/sanya2020327</a></p>
-                <p class="text"><span class="text_bold">Phone: </span><a href="tel:+375292698736">+375 29 269-87-36</a></p>
+                <ul>
+                    <li class="text"><span class="text_bold">E-mail: </span><a href="mailto:afanasienka@yandex.by">afanasienka@yandex.by</a></li>
+                    <li class="text"><span class="text_bold">Telegram: </span><a href="https://t.me/sanya2020327">https://t.me/sanya2020327</a></li>
+                    <li class="text"><span class="text_bold">Phone: </span><a href="tel:+375292698736">+375 29 269-87-36</a></li>
+                </ul>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <h2 class="title">About me</h2>
                 <p class="text">I want to start my career in frontend-development and I have already taken several 
                 steps to achieve this goal: graduate Yandex.Praktikum frontend-developer course aln self-learned 
                 some technologies and frameworks as react and redux</p>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="title">Skills</h2>
-                <p class="text">HTML, CSS (SASS), JS, React, Redux, MobX, BEM, Git</p>
+                <ul>
+                    <p class="text">HTML</p>
+                    <p class="text">CSS (SASS)</p>
+                    <p class="text">JS</p>
+                    <p class="text">React</p>
+                    <p class="text">Redux</p>
+                    <p class="text">MobX</p>
+                    <p class="text">BEM</p>
+                    <p class="text">Git</p>
+                </ul>
             </section>
-            <section class="education">
+            <section class="education" id="education">
                 <h2 class="title">Education</h2>
                 <p class="text">2019-2020. Yandex.Praktikum, Front-End developer training course</p>
             </section>
-            <section class="experience">
+            <section class="experience" id="experience">
                 <h2 class="title">Experience</h2>
                 <p class="text">2021 (4 months): Junior react-developer in Oxios Soft (UA)</p>
             </section>
@@ -48,10 +92,30 @@
                 <h2 class="title">Languages</h2>
                 <p class="text">Russian (native), English (A2)</p>
             </section>
+            <section class="code-section">
+                <h2 class="title">Code example</h2>
+                <p class="text"><span class="text_bold">Task from codewars: </span> Create a function, which returns an array of functions, which return their index in the array.</p>
+                <p class="text"><span class="text_bold">Solution:</span></p>
+                <pre>
+                    <code class="language-javaScript">
+function createFunctions(n) {
+    var callbacks = [];
+    
+    for (let i=0; i < n; i++) {
+        callbacks.push(function() {
+        return i;
+        });
+    }
+    
+    return callbacks;
+}
+                    </code>
+                </pre>
+            </section>
         </div>
         <aside class="projects">
             <h2 class="title">My projects</h2>
-            <a href="https://github.com/sasaafanasienka/Textcounter">
+            <a href="./textcounter.html">
                 <div class="projects__item" >
                     <img class="projects__preview" width="70" height="70" src="./images/TextCounter.svg" alt="textcounter logo">
                     <h5 class="projects__title">TextCounter</h5>
@@ -63,7 +127,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/sasaafanasienka/Tetris">
+            <a href="./tetris.html">
                 <div class="projects__item" >
                     <img class="projects__preview" width="70" height="70" src="./images/Tetris.svg" alt="tetris logo">
                     <h5 class="projects__title">Tetris</h5>
@@ -75,7 +139,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/sasaafanasienka/Carousel">
+            <a target="blank" href="./carousel.html">
                 <div class="projects__item" >
                     <img class="projects__preview" width="70" height="70" src="./images/Carousel.svg"  alt="carousel logo">
                     <h5 class="projects__title">Carousel</h5>
@@ -87,12 +151,16 @@
                 </div>
             </a>
         </aside>
-        <footer class="footer">
-            <p class="footer__copyright">&copy; 2021, <a href='https://github.com/sasaafanasienka'>Alaksandr Afanasienka</a></p>
-            <a href="https://rs.school/js/">
-                <img src="./images/rs_school_js.svg" width="100"  alt="rs school logo">
-            </a>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="footer__copyrght-container">
+            <p class="footer__copyright">&copy; 2021</p>
+            <p class="footer__copyright"><a href='https://github.com/sasaafanasienka'>Alaksandr Afanasienka</a></p>
+        </div>
+        <a href="https://rs.school/js/">
+            <img src="./images/rs_school_js.svg" width="100"  alt="rs school logo">
+        </a>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

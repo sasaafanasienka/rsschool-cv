@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <title>Alaksandr Afanasienka CV</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-menu">
+                <li class="header__menu-item"><a href="./index.html">Main page</a></li>   
+                <li class="header__menu-item"><a href="./carousel.html">Carousel</a></li>
+                <li class="header__menu-item"><a href="./tetris.html">Tetris</a></li>
+                <li class="header__menu-item"><a href="./textcounter.html">TextCounter</a></li>
+            </ul>
+        </nav>
+        <nav class="header__burger-nav header__burger-nav_disabled">
+            <button class="header__burger-close">
+                <img src="./images/close.svg" alt="button icon">
+            </button>
+            <ul class="header__burger-nav-menu">
+                <li class="header__burger-nav-menu-item"><a href="./index.html">Main page</a></li>   
+                <li class="header__burger-nav-menu-item"><a href="./carousel.html">Carousel</a></li>
+                <li class="header__burger-nav-menu-item"><a href="./tetris.html">Tetris</a></li>
+                <li class="header__burger-nav-menu-item"><a href="./textcounter.html">TextCounter</a></li>
+            </ul>
+        </nav>
+        <button class="header__burger-button">
+            <img src="./images/burger.svg" alt="button icon">
+        </button>
+    </header>
+    <main class="cv">
+        <div>
+            <section class="info">
+                <img class="info__image" width="150" height="150" src="./images/carousel.svg" alt="userpic">
+                <div class="info__container">
+                    <h1 class="info__name">Carousel</h1>
+                    <h3 class="info__about">Reusable slider component for react</h3>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h2 class="title">About</h2>
+                <p class="text">It's my own re-used carousel component</p>
+                <p class="text">Features:</p>
+                    <ul class="text-ul">
+                        <li class="text-li">It Works for mobile and desktop devices</li>
+                        <li class="text-li">Supports swipes</li>
+                        <li class="text-li">Works with any HTML content</li>
+                        <li class="text-li">Animated</li>
+                        <li class="text-li">Supports multiple slides on the screen</li>
+                        <li class="text-li">Supports infinie option</li>
+                        <li class="text-li">Supports scrolling to a selected slide (like go to slide X)</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="technologies" id="technologies">
+                <h2 class="title">Technologies</h2>
+                <ul>
+                    <p class="text">HTML</p>
+                    <p class="text">CSS (SASS)</p>
+                    <p class="text">JS</p>
+                    <p class="text">React</p>
+                    <p class="text">BEM</p>
+                </ul>
+            </section>
+            <section class="links" id="links">
+                <h2 class="title">Links</h2>
+                <ul>
+                    <li class="text"><a href="https://sasaafanasienka.github.io/Carousel/"><span class="text_bold">GitHub-pages</span></a></li>
+                    <li class="text"><a href="https://github.com/sasaafanasienka/Carousel"><span class="text_bold">Github</span></a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__copyrght-container">
+            <p class="footer__copyright">&copy; 2021</p>
+            <p class="footer__copyright"><a href='https://github.com/sasaafanasienka'>Alaksandr Afanasienka</a></p>
+        </div>
+        <a href="https://rs.school/js/">
+            <img src="./images/rs_school_js.svg" width="100"  alt="rs school logo">
+        </a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
